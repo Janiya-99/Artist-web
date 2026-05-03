@@ -113,12 +113,13 @@
   .hero-section-blur {
     height: 25vh;
     background:
-      radial-gradient(ellipse at center bottom, var(--bg-color, #ffffff) 0%, var(--bg-color, #ffffff) 34%, transparent 72%),
-      linear-gradient(to top, var(--bg-color, #ffffff) 0%, var(--bg-color, #ffffff) 42%, transparent 100%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+      radial-gradient(ellipse at center bottom, var(--bg-color, #ffffff) 0%, var(--bg-color, #ffffff) 34%, rgba(255,255,255,0.05) 72%, transparent 100%),
+      linear-gradient(to top, var(--bg-color, #ffffff) 0%, var(--bg-color, #ffffff) 42%, rgba(255,255,255,0.1) 100%);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     mask-image: linear-gradient(to top, black 0%, black 20%, transparent 100%);
     -webkit-mask-image: linear-gradient(to top, black 0%, black 20%, transparent 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .hero-title {
