@@ -21,6 +21,7 @@ gsap.registerPlugin(ScrollTrigger)
 import projectPreview from '/home/janith/.gemini/antigravity/brain/f78e5e23-0cbf-46ac-b670-e2df11958855/project_preview_1777803575275.png'
 import founderAvatar from '/home/janith/.gemini/antigravity/brain/f78e5e23-0cbf-46ac-b670-e2df11958855/founder_avatar_1777803591458.png'
 import userAvatarsGroup from '/home/janith/.gemini/antigravity/brain/f78e5e23-0cbf-46ac-b670-e2df11958855/user_avatars_group_1777803607324.png'
+import studioPortrait from './assets/studio-portrait.png'
 
 const cart = useCartStore()
 const page = ref(null)
@@ -585,18 +586,29 @@ const money = new Intl.NumberFormat('en-US', {
       </section>
 
       <section id="biography" class="section-pad" :style="{ backgroundColor: bgColor }">
-        <div class="page-shell px-8 sm:px-12 lg:px-24 grid gap-12 lg:grid-cols-[1fr_1fr]">
+        <div class="page-shell px-8 sm:px-12 lg:px-24 grid gap-16 lg:grid-cols-[1.1fr_0.9fr] items-center">
+          <div class="reveal relative">
+            <div class="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-2xl">
+              <img :src="studioPortrait" alt="Michael Carter Studio" class="h-full w-full object-cover transition duration-700 hover:scale-105" />
+            </div>
+            <div class="absolute -bottom-6 -right-6 h-32 w-32 rounded-3xl bg-white p-4 shadow-xl border border-slate/5 hidden lg:grid place-items-center animate-float">
+              <div class="text-center">
+                <p class="text-3xl font-black text-accent">5+</p>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-slate">Years Exp.</p>
+              </div>
+            </div>
+          </div>
+          
           <div class="reveal">
-            <p class="mb-5 text-sm font-bold uppercase tracking-wider text-accent">Biography</p>
-            <h2 class="mask-heading text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+            <p class="mb-6 text-sm font-bold uppercase tracking-wider text-accent flex items-center gap-2">
+              <span class="h-px w-8 bg-accent"></span>
+              Biography
+            </p>
+            <h2 class="mask-heading mb-8 text-4xl font-bold leading-tight sm:text-5xl">
               Design that speaks louder than words.
             </h2>
-          </div>
-          <div class="reveal flex flex-col justify-center">
-            <p class="text-lg leading-relaxed text-slate italic mb-8">
-              "Every pixel has a purpose, every interaction tells a story."
-            </p>
-            <div class="space-y-6 text-base leading-relaxed text-slate">
+            
+            <div class="space-y-6 text-lg leading-relaxed text-slate font-light">
               <p>
                 With over 5 years of experience in the digital space, Michael Carter has been at the forefront of creating immersive web experiences. Her approach combines strategic thinking with high-fidelity visual design, ensuring every project not only looks stunning but functions flawlessly.
               </p>
@@ -604,13 +616,14 @@ const money = new Intl.NumberFormat('en-US', {
                 She specializes in Framer development, motion design, and brand identities that resonate with modern audiences. A reliable partner in bringing complex ideas to life through simple, user-centered solutions.
               </p>
             </div>
-            <div class="mt-12 flex items-center gap-6">
-              <div class="h-14 w-14 rounded-full bg-slate/5 border border-slate/10 grid place-items-center">
-                <span class="text-xl font-serif text-ink italic">M.C.</span>
+
+            <div class="mt-12 pt-12 border-t border-slate/10 flex items-center gap-6">
+              <div class="h-16 w-16 rounded-full bg-slate/5 border border-slate/10 grid place-items-center">
+                <span class="text-2xl font-serif text-ink italic">M.C.</span>
               </div>
               <div>
-                <p class="font-bold text-ink">Michael Carter</p>
-                <p class="text-sm text-slate">Digital Product Designer</p>
+                <p class="text-xl font-bold text-ink">Michael Carter</p>
+                <p class="text-sm text-slate font-medium">Digital Product Designer & Artist</p>
               </div>
             </div>
           </div>
