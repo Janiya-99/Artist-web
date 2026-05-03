@@ -15,8 +15,8 @@ export default {
         studio: '32px',
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        display: ['Outfit', 'sans-serif'],
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Poppins', 'sans-serif'],
       },
       boxShadow: {
         soft: '0 24px 80px rgba(15, 23, 42, 0.08)',

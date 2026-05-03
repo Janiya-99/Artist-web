@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -117,7 +117,7 @@
 
   .hero-title {
     @apply font-display;
-    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-size: clamp(2.25rem, 5vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.1;
