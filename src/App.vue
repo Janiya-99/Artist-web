@@ -18,6 +18,10 @@ import { useCartStore } from './stores/cart'
 
 gsap.registerPlugin(ScrollTrigger)
 
+import projectPreview from '/home/janith/.gemini/antigravity/brain/f78e5e23-0cbf-46ac-b670-e2df11958855/project_preview_1777803575275.png'
+import founderAvatar from '/home/janith/.gemini/antigravity/brain/f78e5e23-0cbf-46ac-b670-e2df11958855/founder_avatar_1777803591458.png'
+import userAvatarsGroup from '/home/janith/.gemini/antigravity/brain/f78e5e23-0cbf-46ac-b670-e2df11958855/user_avatars_group_1777803607324.png'
+
 const cart = useCartStore()
 const page = ref(null)
 const cartOpen = ref(false)
@@ -515,28 +519,65 @@ const money = new Intl.NumberFormat('en-US', {
       </section>
 
       <section class="section-pad" :style="{ backgroundColor: bgColor }">
-        <div class="page-shell reveal-group grid gap-5 md:grid-cols-3">
-          <div class="reveal-child rounded-studio bg-white p-10 shadow-sm border border-slate/5">
-            <Sparkles class="mb-10 text-accent" :size="32" />
-            <h3 class="text-2xl font-bold">Award Nominee</h3>
-            <p class="mt-4 text-base leading-7 text-ink/60">
-              Recognized for expressive art direction and innovative digital experiences.
+        <div class="page-shell px-8 sm:px-12 lg:px-24 reveal-group grid gap-6 md:grid-cols-3">
+          <!-- Card 1: Awards & Preview -->
+          <div class="reveal-child flex flex-col rounded-[2.5rem] bg-white p-8 shadow-sm border border-slate/5 overflow-hidden">
+            <div class="mb-8 flex items-center gap-3">
+              <div class="h-10 w-10 grid place-items-center rounded-xl bg-slate/5 text-ink font-black">w.</div>
+              <Award class="text-yellow-500" :size="20" />
+            </div>
+            <h3 class="mb-4 text-2xl font-bold tracking-tight">Awwwards Nominee</h3>
+            <p class="mb-10 text-sm leading-relaxed text-slate">
+              Recognized for excellence in web design and innovative digital experiences.
             </p>
+            <div class="mt-auto -mx-8 -mb-8 relative group">
+              <img :src="projectPreview" alt="Project Preview" class="w-full h-auto transition duration-700 group-hover:scale-105" />
+              <div class="absolute top-4 right-4 h-10 w-10 grid place-items-center rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30">
+                <ArrowUpRight :size="18" />
+              </div>
+            </div>
           </div>
-          <div class="reveal-child rounded-studio bg-ink p-7 text-white shadow-soft">
-            <p class="text-6xl font-black text-white/15">99</p>
-            <p class="mt-14 text-xl font-semibold leading-7">
-              Carter's design expertise goes beyond aesthetics. She crafts experiences that
-              truly connect with users.
+
+          <!-- Card 2: Testimonial -->
+          <div class="reveal-child flex flex-col rounded-[2.5rem] bg-ink p-10 shadow-2xl">
+            <div class="mb-10 text-white/10 text-6xl font-serif">99</div>
+            <p class="text-[22px] font-medium leading-[1.5] text-white">
+              Carter’s design expertise goes beyond aesthetics—she crafts experiences that truly connect with users. A great collaborator and a problem-solver at heart.
             </p>
+            <div class="mt-auto pt-10 flex items-center gap-4 border-t border-white/10">
+              <img :src="founderAvatar" alt="Samantha" class="h-12 w-12 rounded-xl object-cover" />
+              <div>
+                <p class="text-white font-bold text-sm">Samantha</p>
+                <p class="text-white/50 text-xs">Founder at NexaTech</p>
+              </div>
+            </div>
           </div>
-          <div class="reveal-child rounded-studio bg-surface p-10 shadow-sm border border-slate/5">
-            <div class="mt-28 rounded-full bg-canvas px-6 py-4 shadow-sm">
-              <div class="flex items-center justify-between">
-                <span class="text-base font-bold">20+ projects completed</span>
-                <span class="grid h-8 w-8 place-items-center rounded-full bg-accent text-white">
+
+          <!-- Card 3: Stats -->
+          <div class="reveal-child flex flex-col rounded-[2.5rem] bg-white p-10 shadow-sm border border-slate/5">
+            <div class="mb-12 flex items-center gap-2 rounded-full bg-accent px-3 py-1.5 w-fit">
+              <img :src="userAvatarsGroup" alt="Avatars" class="h-6 w-12 object-contain rounded-full" />
+              <span class="text-[10px] font-bold text-white uppercase tracking-wider">Trusted by many</span>
+            </div>
+            
+            <div class="space-y-6">
+              <div class="flex items-center justify-between p-4 rounded-2xl border border-slate/5 bg-slate/[0.02]">
+                <span class="font-bold text-slate">20+ projects completed</span>
+                <div class="h-8 w-8 grid place-items-center rounded-full bg-indigo-500 text-white">
                   <Check :size="16" />
-                </span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between p-4 rounded-2xl border border-slate/5 bg-slate/[0.02]">
+                <span class="font-bold text-slate">5+ years of experiences</span>
+                <div class="h-8 w-8 grid place-items-center rounded-full bg-accent text-white">
+                  <Rocket :size="16" />
+                </div>
+              </div>
+              <div class="flex items-center justify-between p-4 rounded-2xl border border-slate/5 bg-slate/[0.02]">
+                <span class="font-bold text-slate">10+ happy clients</span>
+                <div class="h-8 w-8 grid place-items-center rounded-full bg-yellow-500 text-white">
+                  <Smile :size="16" />
+                </div>
               </div>
             </div>
           </div>
@@ -544,7 +585,7 @@ const money = new Intl.NumberFormat('en-US', {
       </section>
 
       <section id="process" class="section-pad rounded-t-[32px] bg-ink text-white lg:rounded-t-[48px]">
-        <div class="page-shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div class="page-shell px-8 sm:px-12 lg:px-24 grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <p class="reveal text-sm font-semibold text-white/45">How it works</p>
           <div>
             <h2 class="mask-heading max-w-2xl text-4xl font-bold leading-tight sm:text-5xl">
@@ -569,7 +610,7 @@ const money = new Intl.NumberFormat('en-US', {
       </section>
 
       <section id="faq" class="section-pad" :style="{ backgroundColor: bgColor }">
-        <div class="page-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="page-shell px-8 sm:px-12 lg:px-24 grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p class="reveal mb-5 text-sm font-bold uppercase tracking-wider text-accent">FAQs</p>
             <h2 class="mask-heading max-w-lg text-4xl font-bold leading-tight">
