@@ -24,8 +24,8 @@
   .mask-heading {
     @apply font-display;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.01em;
     line-height: 1.1;
   }
 
@@ -125,7 +125,7 @@
     @apply font-display;
     font-family: 'Poppins', sans-serif;
     font-size: clamp(2.25rem, 5vw, 2.5rem);
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 1.1;
     text-align: start;

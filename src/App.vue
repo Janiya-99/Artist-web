@@ -24,17 +24,6 @@ const cartOpen = ref(false)
 const openFaq = ref(0)
 const bgColor = ref('#FFFFFF')
 
-const themes = [
-  { name: 'White', color: '#FFFFFF', text: '#000000' },
-  { name: 'Mint', color: '#F0FDF4', text: '#064E3B' },
-  { name: 'Ice', color: '#F0F9FF', text: '#0C4A6E' },
-  { name: 'Lavender', color: '#FAF5FF', text: '#581C87' },
-]
-
-function setTheme(theme) {
-  bgColor.value = theme.color
-}
-
 let lenis
 let lenisTicker
 let scrollUnsubscribe
@@ -379,15 +368,14 @@ const money = new Intl.NumberFormat('en-US', {
           <a class="transition hover:text-slate" href="#faq">Contact</a>
         </div>
         <div class="flex items-center gap-4">
-          <div class="flex items-center gap-2 rounded-full bg-slate/5 p-1">
-            <button
-              v-for="theme in themes"
-              :key="theme.name"
-              class="h-6 w-6 rounded-full border border-slate/10 transition hover:scale-110"
-              :style="{ backgroundColor: theme.color }"
-              :title="theme.name"
-              @click="setTheme(theme)"
-            ></button>
+          <div class="flex items-center gap-3 rounded-full bg-slate/5 px-4 py-2 border border-slate/10">
+            <span class="text-xs font-bold text-slate uppercase tracking-wider">Background</span>
+            <input
+              type="color"
+              :value="bgColor"
+              class="h-6 w-8 cursor-pointer rounded bg-transparent border-0"
+              @input="bgColor = $event.target.value"
+            />
           </div>
           <button
             class="relative grid h-10 w-10 place-items-center rounded-full bg-slate/10 transition hover:bg-primary/15"
