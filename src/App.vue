@@ -584,6 +584,39 @@ const money = new Intl.NumberFormat('en-US', {
         </div>
       </section>
 
+      <section id="biography" class="section-pad" :style="{ backgroundColor: bgColor }">
+        <div class="page-shell px-8 sm:px-12 lg:px-24 grid gap-12 lg:grid-cols-[1fr_1fr]">
+          <div class="reveal">
+            <p class="mb-5 text-sm font-bold uppercase tracking-wider text-accent">Biography</p>
+            <h2 class="mask-heading text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+              Design that speaks louder than words.
+            </h2>
+          </div>
+          <div class="reveal flex flex-col justify-center">
+            <p class="text-lg leading-relaxed text-slate italic mb-8">
+              "Every pixel has a purpose, every interaction tells a story."
+            </p>
+            <div class="space-y-6 text-base leading-relaxed text-slate">
+              <p>
+                With over 5 years of experience in the digital space, Michael Carter has been at the forefront of creating immersive web experiences. Her approach combines strategic thinking with high-fidelity visual design, ensuring every project not only looks stunning but functions flawlessly.
+              </p>
+              <p>
+                She specializes in Framer development, motion design, and brand identities that resonate with modern audiences. A reliable partner in bringing complex ideas to life through simple, user-centered solutions.
+              </p>
+            </div>
+            <div class="mt-12 flex items-center gap-6">
+              <div class="h-14 w-14 rounded-full bg-slate/5 border border-slate/10 grid place-items-center">
+                <span class="text-xl font-serif text-ink italic">M.C.</span>
+              </div>
+              <div>
+                <p class="font-bold text-ink">Michael Carter</p>
+                <p class="text-sm text-slate">Digital Product Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="process" class="section-pad rounded-t-[32px] bg-ink text-white lg:rounded-t-[48px]">
         <div class="page-shell px-8 sm:px-12 lg:px-24 grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <p class="reveal text-sm font-semibold text-white/45">How it works</p>
