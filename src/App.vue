@@ -426,7 +426,7 @@ const money = new Intl.NumberFormat('en-US', {
         <div class="page-shell z-10 w-full lg:-translate-x-4 lg:translate-y-8">
           <div class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:items-end">
             <!-- Left: Headline and Status -->
-            <div class="hero-copy w-full max-w-2xl text-left lg:pr-8">
+            <div class="hero-copy w-full max-w-2xl text-left lg:pl-12 lg:pr-8">
               <div class="hero-mask-line mb-6">
                 <div class="hero-mask-content inline-flex items-center gap-2 rounded-full border border-slate/10 bg-slate/5 px-3 py-1.5 text-xs font-medium text-slate sm:text-[13px]">
                   <span class="relative flex h-2 w-2">
