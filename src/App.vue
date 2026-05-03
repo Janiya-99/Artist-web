@@ -22,6 +22,19 @@ const cart = useCartStore()
 const page = ref(null)
 const cartOpen = ref(false)
 const openFaq = ref(0)
+const bgColor = ref('#FFFFFF')
+
+const themes = [
+  { name: 'White', color: '#FFFFFF', text: '#000000' },
+  { name: 'Mint', color: '#F0FDF4', text: '#064E3B' },
+  { name: 'Ice', color: '#F0F9FF', text: '#0C4A6E' },
+  { name: 'Lavender', color: '#FAF5FF', text: '#581C87' },
+]
+
+function setTheme(theme) {
+  bgColor.value = theme.color
+}
+
 let lenis
 let lenisTicker
 let scrollUnsubscribe
@@ -353,10 +366,11 @@ const money = new Intl.NumberFormat('en-US', {
 </script>
 
 <template>
-  <div ref="page" class="site-shell min-h-screen">
+  <div ref="page" class="site-shell min-h-screen" :style="{ backgroundColor: bgColor, '--bg-color': bgColor }">
     <header class="fixed inset-x-0 top-0 z-40 w-full">
       <nav
-        class="flex w-full items-center justify-between bg-canvas/80 px-5 py-5 backdrop-blur-md sm:px-6 lg:px-12"
+        class="flex w-full items-center justify-between px-5 py-5 backdrop-blur-md sm:px-6 lg:px-12"
+        :style="{ backgroundColor: bgColor + 'CC' }"
       >
         <a href="#" class="font-display text-2xl font-black tracking-tight">Michael Carter</a>
         <div class="hidden items-center gap-10 text-base font-medium md:flex">
@@ -364,7 +378,17 @@ const money = new Intl.NumberFormat('en-US', {
           <a class="transition hover:text-slate" href="#process">About</a>
           <a class="transition hover:text-slate" href="#faq">Contact</a>
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-4">
+          <div class="flex items-center gap-2 rounded-full bg-slate/5 p-1">
+            <button
+              v-for="theme in themes"
+              :key="theme.name"
+              class="h-6 w-6 rounded-full border border-slate/10 transition hover:scale-110"
+              :style="{ backgroundColor: theme.color }"
+              :title="theme.name"
+              @click="setTheme(theme)"
+            ></button>
+          </div>
           <button
             class="relative grid h-10 w-10 place-items-center rounded-full bg-slate/10 transition hover:bg-primary/15"
             type="button"
@@ -385,7 +409,7 @@ const money = new Intl.NumberFormat('en-US', {
     </header>
 
     <main>
-      <section class="artist-hero relative flex h-screen min-h-[720px] w-full items-end overflow-hidden bg-canvas">
+      <section class="artist-hero relative flex h-screen min-h-[720px] w-full items-end overflow-hidden" :style="{ backgroundColor: bgColor }">
         <div
           class="hero-image-wrap pointer-events-none absolute bottom-0 left-1/2 z-0 h-[82vh] max-h-[880px] min-h-[620px] w-[95vw] max-w-[780px] -translate-x-1/2 overflow-hidden sm:w-[70vw] lg:h-[88vh] lg:w-[48vw]"
         >
@@ -490,7 +514,7 @@ const money = new Intl.NumberFormat('en-US', {
         </div>
       </section>
 
-      <section class="section-pad bg-canvas">
+      <section class="section-pad" :style="{ backgroundColor: bgColor }">
         <div class="page-shell reveal-group grid gap-5 md:grid-cols-3">
           <div class="reveal-child rounded-studio bg-white p-10 shadow-sm border border-slate/5">
             <Sparkles class="mb-10 text-accent" :size="32" />
@@ -544,7 +568,7 @@ const money = new Intl.NumberFormat('en-US', {
         </div>
       </section>
 
-      <section id="faq" class="section-pad bg-canvas">
+      <section id="faq" class="section-pad" :style="{ backgroundColor: bgColor }">
         <div class="page-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p class="reveal mb-5 text-sm font-bold uppercase tracking-wider text-accent">FAQs</p>

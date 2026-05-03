@@ -11,13 +11,19 @@
 
   body {
     @apply bg-canvas font-sans text-ink antialiased;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
   }
 
   h1,
   h2,
+  h3,
+  h4,
+  h5,
+  h6,
   .mask-heading {
     @apply font-display;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 1.1;
@@ -107,8 +113,8 @@
   .hero-section-blur {
     height: 45vh;
     background:
-      radial-gradient(ellipse at center bottom, theme('colors.canvas / 95%') 0%, theme('colors.canvas / 85%') 34%, transparent 72%),
-      linear-gradient(to top, theme('colors.canvas / 98%') 0%, theme('colors.canvas / 80%') 42%, transparent 100%);
+      radial-gradient(ellipse at center bottom, var(--bg-color, #ffffff) 0%, var(--bg-color, #ffffff) 34%, transparent 72%),
+      linear-gradient(to top, var(--bg-color, #ffffff) 0%, var(--bg-color, #ffffff) 42%, transparent 100%);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     mask-image: linear-gradient(to top, black 0%, black 60%, transparent 100%);
@@ -117,6 +123,7 @@
 
   .hero-title {
     @apply font-display;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(2.25rem, 5vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -0.02em;
