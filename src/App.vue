@@ -399,7 +399,7 @@ const money = new Intl.NumberFormat('en-US', {
     <main>
       <section class="artist-hero relative flex h-screen min-h-[720px] w-full items-end overflow-hidden" :style="{ backgroundColor: bgColor }">
         <div
-          class="hero-image-wrap pointer-events-none absolute bottom-0 left-1/2 z-0 h-[82vh] max-h-[880px] min-h-[40vh] w-[95vw] max-w-[780px] -translate-x-1/2 overflow-hidden sm:w-[70vw] lg:h-[88vh] lg:w-[48vw]"
+          class="hero-image-wrap pointer-events-none absolute bottom-0 left-1/2 z-0 h-[82vh] max-h-[1200px] min-h-[620px] w-[95vw] max-w-[780px] -translate-x-1/2 overflow-hidden sm:w-[70vw] lg:h-[112vh] lg:w-[48vw]"
         >
           <img
             class="hero-image h-full w-full object-contain object-bottom"
