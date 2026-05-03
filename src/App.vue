@@ -411,7 +411,7 @@ const money = new Intl.NumberFormat('en-US', {
     </header>
 
     <main>
-      <section class="artist-hero relative flex flex-col pt-32 lg:h-screen lg:justify-end lg:pb-32 overflow-hidden" :style="{ backgroundColor: bgColor }">
+      <section class="artist-hero relative flex flex-col pt-32 lg:h-screen lg:justify-end lg:pb-12 overflow-hidden" :style="{ backgroundColor: bgColor }">
         <div
           class="hero-image-wrap pointer-events-none absolute bottom-0 left-1/2 z-0 h-[50vh] max-h-[1200px] min-h-[420px] w-[95vw] max-w-[780px] -translate-x-1/2 overflow-hidden sm:h-[82vh] sm:w-[70vw] lg:h-[104vh] lg:w-[48vw] lg:translate-y-[8%]"
         >
@@ -442,7 +442,7 @@ const money = new Intl.NumberFormat('en-US', {
             </div>
 
             <!-- Right: Bio and CTA -->
-            <div class="hero-bio w-full max-w-[420px] lg:pb-16 lg:-translate-x-12 lg:-translate-y-20">
+            <div class="hero-bio w-full max-w-[420px] lg:pb-16 lg:-translate-x-12">
               <div class="hero-bio-inner flex flex-col items-start gap-6 text-left">
                 <p class="text-[13px] font-normal leading-[1.6] text-ink/80">
                   As a digital product designer specializing in visual design and Framer, 
