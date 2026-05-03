@@ -410,7 +410,7 @@ const money = new Intl.NumberFormat('en-US', {
     </header>
 
     <main>
-      <section class="artist-hero relative flex flex-col pt-32 lg:h-screen lg:justify-center overflow-hidden" :style="{ backgroundColor: bgColor }">
+      <section class="artist-hero relative flex flex-col pt-32 lg:h-screen lg:justify-end lg:pb-32 overflow-hidden" :style="{ backgroundColor: bgColor }">
         <div
           class="hero-image-wrap pointer-events-none absolute bottom-0 left-1/2 z-0 h-[50vh] max-h-[1200px] min-h-[420px] w-[95vw] max-w-[780px] -translate-x-1/2 overflow-hidden sm:h-[82vh] sm:w-[70vw] lg:h-[104vh] lg:w-[48vw]"
         >
@@ -422,8 +422,8 @@ const money = new Intl.NumberFormat('en-US', {
         </div>
         <div class="hero-section-blur pointer-events-none absolute inset-x-0 bottom-0 z-[1]"></div>
 
-        <div class="page-shell z-10 w-full pb-12 lg:pb-0">
-          <div class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:items-center">
+        <div class="page-shell z-10 w-full">
+          <div class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:items-end">
             <!-- Left: Headline and Status -->
             <div class="hero-copy w-full max-w-2xl text-left">
               <div class="hero-mask-line mb-6">
