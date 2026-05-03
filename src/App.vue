@@ -421,7 +421,7 @@ const money = new Intl.NumberFormat('en-US', {
                   As a digital product designer with a strong focus on visual design and Framer websites,
                   she collaborates closely with teams to craft seamless, user-centered experiences.
                 </p>
-                <a class="pill magnetic bg-primary text-white shadow-2xl hover:bg-slate" href="mailto:hello@carterstudio.example">
+                <a class="pill magnetic bg-black text-white shadow-2xl hover:bg-slate" href="mailto:hello@carterstudio.example">
                   Email Me
                 </a>
               </div>
