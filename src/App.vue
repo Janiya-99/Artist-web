@@ -358,11 +358,11 @@ const money = new Intl.NumberFormat('en-US', {
       <nav
         class="flex w-full items-center justify-between bg-canvas/80 px-5 py-5 backdrop-blur-md sm:px-6 lg:px-12"
       >
-        <a href="#" class="font-display text-2xl font-black tracking-tight">Carter</a>
-        <div class="hidden items-center gap-8 text-lg font-medium md:flex">
-          <a class="transition hover:text-primary" href="#work">Work</a>
-          <a class="transition hover:text-primary" href="#process">Process</a>
-          <a class="transition hover:text-primary" href="#faq">Contact</a>
+        <a href="#" class="font-display text-2xl font-black tracking-tight">Michael Carter</a>
+        <div class="hidden items-center gap-10 text-base font-medium md:flex">
+          <a class="transition hover:text-slate" href="#work">Work</a>
+          <a class="transition hover:text-slate" href="#process">About</a>
+          <a class="transition hover:text-slate" href="#faq">Contact</a>
         </div>
         <div class="flex items-center gap-2">
           <button
@@ -398,18 +398,24 @@ const money = new Intl.NumberFormat('en-US', {
         <div class="hero-section-blur pointer-events-none absolute inset-x-0 bottom-0 z-[1]"></div>
 
         <div class="page-shell z-10 w-full pb-12 lg:pb-24">
-          <div class="grid grid-cols-1 items-end gap-12 lg:grid-cols-[1.2fr_30vw_0.8fr] xl:grid-cols-[1.1fr_35vw_0.9fr]">
+          <div class="grid grid-cols-1 items-end gap-12 lg:grid-cols-[1.1fr_30vw_0.9fr] xl:grid-cols-[1.1fr_35vw_0.9fr]">
             <!-- Left: Headline and Status -->
             <div class="hero-copy max-w-[580px]">
-              <div class="hero-mask-line mb-4">
-                <p class="hero-mask-content inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-accent sm:text-[11px]">
-                  <span class="h-2 w-2 rounded-full bg-accent animate-pulse"></span>
-                  2 projects left in May
-                </p>
+              <div class="hero-mask-line mb-6">
+                <div class="hero-mask-content inline-flex items-center gap-2 rounded-full border border-slate/10 bg-slate/5 px-3 py-1.5 text-xs font-medium text-slate sm:text-[13px]">
+                  <span class="h-2 w-2 rounded-full bg-accent"></span>
+                  2 projects left in March
+                </div>
               </div>
               <h1 class="hero-title text-ink">
                 <span class="hero-mask-line">
-                  <span class="hero-mask-content">Carter is solving problems through strategic design and compelling visuals</span>
+                  <span class="hero-mask-content">Carter is solving problems</span>
+                </span>
+                <span class="hero-mask-line">
+                  <span class="hero-mask-content">through strategic design and</span>
+                </span>
+                <span class="hero-mask-line">
+                  <span class="hero-mask-content">compelling visuals</span>
                 </span>
               </h1>
             </div>
@@ -418,13 +424,14 @@ const money = new Intl.NumberFormat('en-US', {
             <div class="hidden lg:block"></div>
 
             <!-- Right: Bio and CTA -->
-            <div class="hero-bio max-w-sm justify-self-start lg:justify-self-end lg:pb-16">
-              <div class="hero-bio-inner space-y-5 text-left">
-                <p class="text-xs leading-[1.6] text-ink/65 sm:text-[14px]">
-                  As a digital product designer with a strong focus on visual design and fine art,
-                  Carter builds experiences that feel intentional, memorable, and useful.
+            <div class="hero-bio max-w-sm justify-self-start lg:justify-self-end lg:pb-20">
+              <div class="hero-bio-inner space-y-8 text-left">
+                <p class="text-[15px] leading-[1.6] text-ink/80">
+                  As a digital product designer with a strong focus on visual design and Framer websites,
+                  she collaborates closely with teams to craft seamless, user-centered experiences.
+                  A reliable partner in bringing ideas to life.
                 </p>
-                <a class="pill magnetic bg-ink text-white hover:bg-primary" href="mailto:hello@carterstudio.example">
+                <a class="pill magnetic bg-primary text-white shadow-2xl hover:bg-slate" href="mailto:hello@carterstudio.example">
                   Email Me
                 </a>
               </div>

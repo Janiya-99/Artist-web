@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#0F172A',
-        canvas: '#F8FAFC',
+        ink: '#000000',
+        canvas: '#FFFFFF',
         surface: '#FFFFFF',
-        primary: '#6366F1',
-        accent: '#0EA5E9',
-        slate: '#94A3B8',
+        primary: '#0F172A',
+        accent: '#22C55E',
+        slate: '#64748B',
       },
       borderRadius: {
         studio: '32px',
