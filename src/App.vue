@@ -422,7 +422,7 @@ const money = new Intl.NumberFormat('en-US', {
         </div>
         <div class="hero-section-blur pointer-events-none absolute inset-x-0 bottom-0 z-[1]"></div>
 
-        <div class="page-shell z-10 w-full">
+        <div class="page-shell z-10 w-full lg:-translate-x-4 lg:translate-y-8">
           <div class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:items-end">
             <!-- Left: Headline and Status -->
             <div class="hero-copy w-full max-w-2xl text-left">
@@ -453,7 +453,7 @@ const money = new Intl.NumberFormat('en-US', {
                   she collaborates closely with teams to craft seamless, user-centered experiences.
                   A reliable partner in bringing ideas to life.
                 </p>
-                <a class="pill magnetic inline-block rounded-2xl bg-black px-10 py-5 text-base font-bold text-white shadow-2xl transition hover:bg-accent" href="mailto:hello@carterstudio.example">
+                <a class="pill magnetic inline-block rounded-[18px] bg-[#111111] px-10 py-5 text-[15px] font-bold text-white shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] transition hover:bg-accent" href="mailto:hello@carterstudio.example">
                   Email Me
                 </a>
               </div>
