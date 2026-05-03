@@ -413,7 +413,7 @@ const money = new Intl.NumberFormat('en-US', {
     <main>
       <section class="artist-hero relative flex flex-col pt-32 lg:h-screen lg:justify-end lg:pb-20 overflow-hidden" :style="{ backgroundColor: bgColor }">
         <div
-          class="hero-image-wrap pointer-events-none absolute bottom-0 left-1/2 z-0 h-[50vh] max-h-[1200px] min-h-[420px] w-[95vw] max-w-[780px] -translate-x-1/2 overflow-hidden sm:h-[82vh] sm:w-[70vw] lg:h-[104vh] lg:w-[48vw]"
+          class="hero-image-wrap pointer-events-none absolute bottom-0 left-1/2 z-0 h-[50vh] max-h-[1200px] min-h-[420px] w-[95vw] max-w-[780px] -translate-x-1/2 overflow-hidden sm:h-[82vh] sm:w-[70vw] lg:h-[104vh] lg:w-[48vw] lg:translate-y-[5%]"
         >
           <img
             class="hero-image h-full w-full object-contain object-bottom"
@@ -426,23 +426,18 @@ const money = new Intl.NumberFormat('en-US', {
         <div class="page-shell z-10 w-full lg:-translate-x-4 lg:translate-y-8">
           <div class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:items-end">
             <!-- Left: Headline and Status -->
-            <div class="hero-copy w-full max-w-2xl text-left">
+            <div class="hero-copy w-full max-w-2xl text-left lg:pr-8">
               <div class="hero-mask-line mb-6">
                 <div class="hero-mask-content inline-flex items-center gap-2 rounded-full border border-slate/10 bg-slate/5 px-3 py-1.5 text-xs font-medium text-slate sm:text-[13px]">
-                  <span class="h-2 w-2 rounded-full bg-accent"></span>
+                  <span class="relative flex h-2 w-2">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75"></span>
+                    <span class="relative inline-flex h-2 w-2 rounded-full bg-accent"></span>
+                  </span>
                   2 projects left in March
                 </div>
               </div>
               <h1 class="hero-title text-ink">
-                <span class="hero-mask-line">
-                  <span class="hero-mask-content">Carter is solving problems</span>
-                </span>
-                <span class="hero-mask-line">
-                  <span class="hero-mask-content">through strategic design and</span>
-                </span>
-                <span class="hero-mask-line">
-                  <span class="hero-mask-content">compelling visuals</span>
-                </span>
+                Carter is solving problems through strategic design and compelling visuals
               </h1>
             </div>
 
@@ -454,7 +449,7 @@ const money = new Intl.NumberFormat('en-US', {
                   she collaborates with teams to craft seamless, user-centered experiences. 
                   A reliable partner in bringing ideas to life.
                 </p>
-                <a class="pill magnetic inline-block rounded-[18px] bg-[#111111] px-10 py-5 text-[15px] font-bold text-white shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] transition hover:bg-accent" href="mailto:hello@carterstudio.example">
+                <a class="pill magnetic inline-block rounded-[18px] bg-[#111111] px-8 py-3.5 text-[14px] font-bold text-white shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] transition hover:bg-accent" href="mailto:hello@carterstudio.example">
                   Email Me
                 </a>
               </div>
