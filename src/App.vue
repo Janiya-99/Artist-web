@@ -399,7 +399,7 @@ const money = new Intl.NumberFormat('en-US', {
     <main>
       <section class="artist-hero relative flex h-screen min-h-[720px] w-full items-end overflow-hidden" :style="{ backgroundColor: bgColor }">
         <div
-          class="hero-image-wrap pointer-events-none absolute bottom-0 left-1/2 z-0 h-[82vh] max-h-[1200px] min-h-[620px] w-[95vw] max-w-[780px] -translate-x-1/2 overflow-hidden sm:w-[70vw] lg:h-[104vh] lg:w-[48vw]"
+          class="hero-image-wrap pointer-events-none absolute bottom-0 left-1/2 z-0 h-[60vh] max-h-[1200px] min-h-[520px] w-[95vw] max-w-[780px] -translate-x-1/2 overflow-hidden sm:h-[82vh] sm:w-[70vw] lg:h-[104vh] lg:w-[48vw]"
         >
           <img
             class="hero-image h-full w-full object-contain object-bottom"
@@ -410,9 +410,9 @@ const money = new Intl.NumberFormat('en-US', {
         <div class="hero-section-blur pointer-events-none absolute inset-x-0 bottom-0 z-[1]"></div>
 
         <div class="page-shell z-10 w-full pb-12 lg:pb-32">
-          <div class="flex flex-col items-end justify-between gap-12 lg:flex-row lg:items-end">
+          <div class="flex flex-col items-center justify-between gap-12 lg:flex-row lg:items-end">
             <!-- Left: Headline and Status -->
-            <div class="hero-copy w-full max-w-2xl">
+            <div class="hero-copy w-full max-w-2xl text-center lg:text-left">
               <div class="hero-mask-line mb-6">
                 <div class="hero-mask-content inline-flex items-center gap-2 rounded-full border border-slate/10 bg-slate/5 px-3 py-1.5 text-xs font-medium text-slate sm:text-[13px]">
                   <span class="h-2 w-2 rounded-full bg-accent"></span>
@@ -434,7 +434,7 @@ const money = new Intl.NumberFormat('en-US', {
 
             <!-- Right: Bio and CTA -->
             <div class="hero-bio w-full max-w-sm lg:pb-16">
-              <div class="hero-bio-inner space-y-8 text-left">
+              <div class="hero-bio-inner space-y-8 text-center lg:text-left">
                 <p class="text-[15px] leading-[1.6] text-ink/80">
                   As a digital product designer with a strong focus on visual design and Framer websites,
                   she collaborates closely with teams to craft seamless, user-centered experiences.
