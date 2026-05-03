@@ -446,14 +446,14 @@ const money = new Intl.NumberFormat('en-US', {
             </div>
 
             <!-- Right: Bio and CTA -->
-            <div class="hero-bio w-full max-w-sm lg:pb-16">
-              <div class="hero-bio-inner space-y-6 text-left">
-                <p class="text-[14px] leading-[1.6] text-ink/80">
+            <div class="hero-bio w-full max-w-[340px] lg:pb-16">
+              <div class="hero-bio-inner space-y-10 text-left">
+                <p class="text-[15px] font-medium leading-[1.6] text-ink/90">
                   As a digital product designer with a strong focus on visual design and Framer websites,
                   she collaborates closely with teams to craft seamless, user-centered experiences.
                   A reliable partner in bringing ideas to life.
                 </p>
-                <a class="pill magnetic rounded-2xl bg-black px-8 py-4 text-white shadow-xl hover:bg-slate" href="mailto:hello@carterstudio.example">
+                <a class="pill magnetic inline-block rounded-2xl bg-black px-10 py-5 text-base font-bold text-white shadow-2xl transition hover:bg-accent" href="mailto:hello@carterstudio.example">
                   Email Me
                 </a>
               </div>
