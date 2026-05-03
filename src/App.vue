@@ -407,21 +407,28 @@ const money = new Intl.NumberFormat('en-US', {
                   2 projects left in March
                 </div>
               </div>
-              <h1 class="hero-title whitespace-nowrap text-ink">
+              <h1 class="hero-title text-ink">
                 <span class="hero-mask-line">
-                  <span class="hero-mask-content">Carter is solving problems through strategic design and compelling visuals</span>
+                  <span class="hero-mask-content">Carter is solving problems</span>
+                </span>
+                <span class="hero-mask-line">
+                  <span class="hero-mask-content">through strategic design and</span>
+                </span>
+                <span class="hero-mask-line">
+                  <span class="hero-mask-content">compelling visuals</span>
                 </span>
               </h1>
             </div>
 
             <!-- Right: Bio and CTA -->
-            <div class="hero-bio w-full max-w-sm lg:pb-2">
-              <div class="hero-bio-inner space-y-6 text-left lg:text-right">
-                <p class="text-[14px] leading-[1.6] text-ink/80">
+            <div class="hero-bio w-full max-w-sm lg:pb-16">
+              <div class="hero-bio-inner space-y-8 text-left">
+                <p class="text-[15px] leading-[1.6] text-ink/80">
                   As a digital product designer with a strong focus on visual design and Framer websites,
                   she collaborates closely with teams to craft seamless, user-centered experiences.
+                  A reliable partner in bringing ideas to life.
                 </p>
-                <a class="pill magnetic bg-black text-white shadow-2xl hover:bg-slate" href="mailto:hello@carterstudio.example">
+                <a class="pill magnetic rounded-2xl bg-black px-8 py-4 text-white shadow-xl hover:bg-slate" href="mailto:hello@carterstudio.example">
                   Email Me
                 </a>
               </div>
