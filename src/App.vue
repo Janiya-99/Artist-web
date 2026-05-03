@@ -442,7 +442,7 @@ const money = new Intl.NumberFormat('en-US', {
             </div>
 
             <!-- Right: Bio and CTA -->
-            <div class="hero-bio w-full max-w-[340px] lg:pb-16 lg:-translate-x-12 lg:translate-y-8">
+            <div class="hero-bio w-full max-w-[420px] lg:pb-16 lg:-translate-x-12 lg:translate-y-8">
               <div class="hero-bio-inner flex flex-col items-start gap-6 text-left">
                 <p class="text-[13px] font-normal leading-[1.6] text-ink/80">
                   As a digital product designer specializing in visual design and Framer, 
