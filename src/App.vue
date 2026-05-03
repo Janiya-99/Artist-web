@@ -462,7 +462,7 @@ const money = new Intl.NumberFormat('en-US', {
       </section>
 
       <section id="work" class="section-pad">
-        <div class="page-shell">
+        <div class="page-shell px-8 sm:px-12 lg:px-24">
           <div class="mb-8 flex items-end justify-between gap-4">
             <div>
               <p class="reveal mb-3 text-sm font-bold uppercase tracking-wider text-accent">Featured works</p>
